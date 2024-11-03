@@ -1,7 +1,8 @@
 @import "src/shared/styles/vars";
 
 .form {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 840px;
   background-color: $base-color;
   border-radius: 10px;

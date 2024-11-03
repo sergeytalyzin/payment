@@ -1,13 +1,15 @@
+@import "src/shared/styles/vars";
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f2f5;
+  background-color: $base-color;
 }
 
 .content {
-  background-color: white;
+  background-color: $base-color;
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -16,13 +18,13 @@
 }
 
 .title {
-  color: #1890ff;
+  color: $blue;
   font-size: 24px;
   margin-bottom: 16px;
 }
 
 .data {
-  background-color: #f6f8fa;
+  background-color: $base-color;
   padding: 16px;
   border-radius: 8px;
   overflow-x: auto;
@@ -31,6 +33,7 @@
 }
 
 .button {
+  margin: 0 auto;
   margin-top: 16px;
   font-size: 16px;
   padding: 8px 24px;
