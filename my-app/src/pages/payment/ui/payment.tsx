@@ -30,18 +30,11 @@ const Form = () => {
 		defaultValues: defaultValues,
 	});
 
-	const {
-		handleSubmit,
-		formState: { isValid, isSubmitted },
-		control,
-		getValues,
-		reset,
-	} = methods;
+	const { handleSubmit, control, getValues } = methods;
 
 	const onSubmit = () => {
 		const values = getValues();
 		console.log('values', values);
-
 		const cardNumber = values.card?.replace(/\s/g, ''); // Убираем пробелы для проверки
 		if (cardNumber && !validateCardNumberLuhn(cardNumber)) {
 			notification.error({
@@ -51,7 +44,6 @@ const Form = () => {
 			return;
 		}
 
-		// Параметры для запроса
 		const apiKey = '316b2be8-3475-4462-bd57-c7794d4bdb53';
 		const secretKey = '1234567890';
 		const transactionId = uuidv4();
@@ -59,11 +51,9 @@ const Form = () => {
 		const description = 'Описание платежа';
 		const email = 'example@example.com';
 
-		// Генерация hash_sum
 		const hashString = `${apiKey}${transactionId}${amount}${secretKey}`;
 		const hashSum = sha256(hashString).toString();
 
-		// Формирование тела запроса
 		const requestData = {
 			hash_sum: hashSum,
 			transaction: transactionId,

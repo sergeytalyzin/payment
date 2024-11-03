@@ -30,7 +30,7 @@ const InputNumberMaskComponent: FC<Props> = ({ main, ...props }) => {
 	return (
 		<div className={classNames('form-item form-item-mask', { hasError: errorField?.hasError })}>
 			{label && <LabelComponent name={field.name} label={label} />}
-			<span className="ant-input-affix-wrapper css-dev-only-do-not-override-1e2br56 ant-input-outlined ant-input-password">
+			<span className={classNames('form-item-mask__span', { hasError: errorField?.hasError })}>
 				<InputMask
 					mask={mask}
 					autoComplete={main.autoComplete ?? 'off'}

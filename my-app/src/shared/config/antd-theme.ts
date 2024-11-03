@@ -3,27 +3,16 @@ import { Colors } from '@shared/config/colors';
 
 export const theme: ThemeConfig = {
 	token: {
-		colorPrimary: Colors.dark1,
-		colorPrimaryHover: Colors.dark2,
+		colorPrimary: Colors.blue,
+		colorPrimaryHover: Colors.darkBlue,
 		colorError: Colors.coral,
 		colorWarning: Colors.lightOrange,
 		colorSuccess: Colors.greenYellow,
-		colorInfo: Colors.dark2,
+		colorInfo: Colors.darkBlue,
 	},
 	components: {
-		Table: { rowSelectedBg: Colors.gray, rowSelectedHoverBg: Colors.gray2 },
-		Checkbox: {
-			colorPrimary: Colors.green,
-			colorPrimaryHover: Colors.green,
-		},
-		Pagination: {
-			colorPrimary: Colors.baseColor,
-			colorPrimaryHover: Colors.baseColor,
-			lineWidth: 0,
-			colorBgContainer: Colors.dark1,
-		},
 		Input: {
-			colorPrimaryHover: Colors.dark2,
+			colorPrimaryHover: Colors.darkBlue,
 			colorBgContainer: Colors.gray4,
 			colorBgContainerDisabled: Colors.gray3,
 			colorBorder: 'transparent',
@@ -32,7 +21,7 @@ export const theme: ThemeConfig = {
 			controlHeight: 48,
 		},
 		InputNumber: {
-			colorPrimaryHover: Colors.dark2,
+			colorPrimaryHover: Colors.darkBlue,
 			colorBgContainer: Colors.gray4,
 			colorBgContainerDisabled: Colors.gray3,
 			colorBorder: 'transparent',
@@ -45,18 +34,6 @@ export const theme: ThemeConfig = {
 			fontSize: 15,
 			colorLink: Colors.blue,
 			colorLinkHover: Colors.darkBlue,
-		},
-		Select: {
-			fontSize: 16,
-			colorBgContainer: Colors.gray4,
-			colorBgContainerDisabled: Colors.gray3,
-			colorBorder: 'transparent',
-			colorPrimaryHover: Colors.dark2,
-			controlHeight: 48,
-		},
-		Switch: {
-			colorPrimary: Colors.greenYellow,
-			colorPrimaryHover: Colors.greenYellow,
 		},
 		Segmented: {
 			// itemSelectedBg: 'transparent',
