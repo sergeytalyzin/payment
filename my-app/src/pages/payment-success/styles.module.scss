@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  text-align: center;
+}
+
+.title {
+  color: #1890ff;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.data {
+  background-color: #f6f8fa;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  max-height: 300px;
+  margin-bottom: 24px;
+}
+
+.button {
+  margin-top: 16px;
+  font-size: 16px;
+  padding: 8px 24px;
+}

@@ -1,0 +1,29 @@
+@import "src/shared/styles/vars";
+
+.form {
+  width: 600px;
+  height: 840px;
+  background-color: $base-color;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 30px;
+  :global(.ant-col) {
+    margin: 10px 0;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+.btn {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  :global(.ant-btn) {
+    a:hover {
+      color: $base-color;
+    }
+  }
+}

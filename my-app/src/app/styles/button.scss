@@ -1,0 +1,35 @@
+@import "src/shared/styles/vars";
+
+.ant-btn {
+  padding: 10px 24px;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+}
+
+.ant-btn-primary {
+  &:not(.ant-btn-background-ghost) {
+    &.green {
+      background-color: $green-yellow;
+      color: $dark-1;
+      &:hover {
+        background-color: darken($green-yellow, 10%);
+        color: $dark-1;
+      }
+    }
+  }
+
+  &.ant-btn-background-ghost {
+    &.green {
+      color: $green-yellow;
+      border-color: $green-yellow;
+      &:hover {
+        color: darken($green-yellow, 10%);
+        border-color: darken($green-yellow, 10%);
+      }
+    }
+  }
+}

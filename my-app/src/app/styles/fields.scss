@@ -1,0 +1,74 @@
+@import "fields/input";
+.form-item__input-mask {
+  border: none;
+  background-color: #F5F5F5;
+  outline: transparent;
+}
+.hasError {
+  border-color: #ff2e56;
+}
+.form-item__input-mask:hover {
+  border: 1px solid transparent;
+  outline: transparent;
+}
+
+.form-item-mask-input {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  min-width: 0;
+  padding: 10.4px 11px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 16px;
+  line-height: 1.5714285714285714;
+  border-radius: 10px;
+  transition: all 0.2s;
+  background: #F5F5F5;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+.form-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-tap-highlight-color: transparent;
+  gap: 4px;
+  width: 100% !important;
+  &.row {
+    flex-direction: row;
+  }
+  label {
+    color: $dark-1;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    .required {
+      padding-left: 2px;
+      color: $coral;
+    }
+  }
+  .errorField {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $gray-1;
+    margin-top: 5px;
+    span {
+      width: 80%;
+    }
+    &-limit {
+      width: 20%;
+      text-align: right;
+      padding-right: 5px;
+    }
+    &.hasError {
+      color: $coral;
+    }
+    &:empty {
+      display: none;
+    }
+  }
+}

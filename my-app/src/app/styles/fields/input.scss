@@ -1,0 +1,49 @@
+@import "src/shared/styles/vars";
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused, .ant-input:focus, .ant-input-focused {
+  box-shadow: none;
+}
+.hasError {
+  .ant-input-affix-wrapper:not(.ant-input-textarea-affix-wrapper) {
+    border-color: $coral!important;
+  }
+  .form-item-mask-input {    border-color: $coral!important;}
+
+}
+.form-item {
+  margin-bottom: 20px;
+  .ant-input-number-affix-wrapper {
+    width: 100%!important;
+  }
+  .ant-input-affix-wrapper:not(.ant-input-textarea-affix-wrapper) {
+    padding: 11px 20px;
+    .ant-input {
+      box-shadow: none !important;
+    }
+    .ant-input-number {
+      width: 100% !important;
+    }
+  }
+
+  .ant-input-textarea-affix-wrapper.ant-input-affix-wrapper {
+    textarea {
+      padding: 11px 20px;
+    }
+  }
+
+  .ant-input-data-count {
+    margin-top: 5px;
+  }
+  .ant-select-tree-node-selected {
+    color: $base-color !important;
+  }
+  
+  .ant-input-number {
+    width: 100% !important;
+  }
+}
+
