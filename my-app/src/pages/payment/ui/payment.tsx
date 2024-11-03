@@ -30,7 +30,7 @@ const Form = () => {
 		defaultValues: defaultValues,
 	});
 
-	const { handleSubmit, control, getValues } = methods;
+	const { handleSubmit, control, getValues, setValue } = methods;
 
 	const onSubmit = () => {
 		const values = getValues();
@@ -112,6 +112,11 @@ const Form = () => {
 								rules={{
 									required: { message: 'Поле обязательное', value: true },
 									maxLength: { value: 3, message: 'Должно содержать максимум 3 символа' },
+									onChange: (e: any) => {
+										const value = e.target.value.replace(/\D/g, '');
+										e.target.value = value;
+										setValue('cvv', value);
+									},
 								}}
 								name={'cvv'}
 								control={control}
