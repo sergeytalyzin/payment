@@ -178,7 +178,9 @@ const Form = () => {
 						<Button type={'primary'} htmlType={'submit'}>
 							Перевести
 						</Button>
-						<Button type={'default'}>Вернуться</Button>
+						<Button type={'default'} onClick={() => navigate('/')}>
+							Вернуться
+						</Button>
 					</div>
 				</form>
 			</FormProvider>
